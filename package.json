@@ -1,0 +1,38 @@
+{
+    "name":        "gemstone-framework-backend",
+    "homepage":    "http://gemstonejs.com/",
+    "description": "Backend Framework of Gemstone Technology Stack",
+    "version":     "0.0.0",
+    "license":     "Apache-2.0",
+    "author": {
+        "name":    "Gemstone Project",
+        "url":     "http://gemstonejs.com"
+    },
+    "keywords": [
+        "gemstone", "framework", "backend"
+    ],
+    "repository": {
+        "type": "git",
+        "url":  "git://github.com/gemstonejs/gemstone-framework-backend.git"
+    },
+    "bugs": {
+        "url":  "http://github.com/gemstonejs/gemstone-framework-backend/issues"
+    },
+    "main":    "./src/gemstone.js",
+    "devDependencies" : {
+        "eslint":                         "~3.19.0",
+        "eslint-config-standard":         "~7.1.0",
+        "eslint-plugin-standard":         "~2.1.1",
+        "eslint-plugin-promise":          "~3.5.0",
+        "eslint-plugin-import":           "~2.2.0",
+        "babel-eslint":                   "~7.2.1"
+    },
+    "dependencies" : {
+    },
+    "engines": {
+        "node":                           ">=6.0.0"
+    },
+    "scripts": {
+        "lint":                           "eslint --config eslint.yaml src/*.js"
+    }
+}
