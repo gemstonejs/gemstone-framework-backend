@@ -29,17 +29,18 @@ export default class Gemstone {
     static async boot (options) {
         latching.hook("boot-enter", "pass", options)
 
-        /*  default options  */
-        options = Object.assign({
-            app:     "example",
-            ini:     "example.ini",
-            modules: "**/*.mod.js",
-            config:  { env: "development", tag: "" }
-        }, options)
-        latching.hook("boot-options", "pass", options)
-
         /*  instanciate microkernel  */
         kernel = new Microkernel()
+
+        /*  determine options  */
+        options = Object.assign({
+            app:    "example",
+            ini:    "example.ini",
+            config: { env: "development", tag: "" },
+            load:   [ "**/*.mod.js" ]
+        }, options)
+        latching.hook("boot-options", "none", options)
+        kernel.rs("options", options)
 
         /*  define state transitions  */
         kernel.transitions([
@@ -63,7 +64,7 @@ export default class Gemstone {
         const syspath = SysPath({ appName: options.app })
         kernel.rs("syspath", syspath)
 
-        /*  load modules into microkernel  */
+        /*  load extensions and modules into microkernel  */
         kernel.load(
             "microkernel-mod-ctx",
             [ "microkernel-mod-options", { inifile: options.ini } ],
@@ -71,7 +72,7 @@ export default class Gemstone {
             "microkernel-mod-daemon",
             "microkernel-mod-title",
             "microkernel-mod-shutdown",
-            options.modules
+            ...(options.modules)
         )
 
         /*  startup microkernel and its modules  */
