@@ -44,6 +44,6 @@
         "node":                           ">=6.0.0"
     },
     "scripts": {
-        "lint":                           "eslint --config eslint.yaml src/*.js"
+        "prepublishOnly":  "eslint --config eslint.yaml src/*.js"
     }
 }
