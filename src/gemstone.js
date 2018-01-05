@@ -34,10 +34,10 @@ export default class Gemstone {
 
         /*  determine options  */
         options = Object.assign({
-            app:    "example",
-            ini:    "example.ini",
-            config: { env: "development", tag: "" },
-            load:   [ "**/*.mod.js" ]
+            app:     "example",
+            ini:     "example.ini",
+            config:  { env: "development", tag: "" },
+            modules: [ "**/*.mod.js" ]
         }, options)
         latching.hook("boot-options", "none", options)
         kernel.rs("options", options)
