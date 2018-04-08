@@ -20,16 +20,16 @@
     },
     "main":    "./src/gemstone.js",
     "devDependencies" : {
-        "eslint":                         "~4.17.0",
-        "eslint-config-standard":         "~10.2.1",
+        "eslint":                         "~4.19.1",
+        "eslint-config-standard":         "~11.0.0",
         "eslint-plugin-standard":         "~3.0.1",
-        "eslint-plugin-promise":          "~3.6.0",
-        "eslint-plugin-import":           "~2.8.0",
-        "eslint-plugin-node":             "~6.0.0",
-        "babel-eslint":                   "~8.2.1"
+        "eslint-plugin-promise":          "~3.7.0",
+        "eslint-plugin-import":           "~2.10.0",
+        "eslint-plugin-node":             "~6.0.1",
+        "babel-eslint":                   "~8.2.2"
     },
     "dependencies" : {
-        "microkernel":                    "~1.3.3",
+        "microkernel":                    "~1.3.4",
         "microkernel-ext-co":             "~0.9.12",
         "microkernel-ext-debug":          "~0.9.7",
         "microkernel-mod-ctx":            "~0.9.3",
