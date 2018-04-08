@@ -20,25 +20,25 @@
     },
     "main":    "./src/gemstone.js",
     "devDependencies" : {
-        "eslint":                         "~4.19.1",
-        "eslint-config-standard":         "~11.0.0",
-        "eslint-plugin-standard":         "~3.0.1",
-        "eslint-plugin-promise":          "~3.7.0",
-        "eslint-plugin-import":           "~2.10.0",
-        "eslint-plugin-node":             "~6.0.1",
-        "babel-eslint":                   "~8.2.2"
+        "eslint":                         "4.19.1",
+        "eslint-config-standard":         "11.0.0",
+        "eslint-plugin-standard":         "3.0.1",
+        "eslint-plugin-promise":          "3.7.0",
+        "eslint-plugin-import":           "2.10.0",
+        "eslint-plugin-node":             "6.0.1",
+        "babel-eslint":                   "8.2.2"
     },
     "dependencies" : {
-        "microkernel":                    "~1.3.4",
-        "microkernel-ext-co":             "~0.9.12",
-        "microkernel-ext-debug":          "~0.9.7",
-        "microkernel-mod-ctx":            "~0.9.3",
-        "microkernel-mod-options":        "~0.9.3",
-        "microkernel-mod-logger":         "~0.9.7",
-        "microkernel-mod-daemon":         "~0.9.5",
-        "microkernel-mod-title":          "~0.9.3",
-        "microkernel-mod-shutdown":       "~0.9.3",
-        "microkernel-mod-cluster":        "~0.9.5"
+        "microkernel":                    "1.3.4",
+        "microkernel-ext-co":             "0.9.12",
+        "microkernel-ext-debug":          "0.9.7",
+        "microkernel-mod-ctx":            "0.9.3",
+        "microkernel-mod-options":        "0.9.3",
+        "microkernel-mod-logger":         "0.9.7",
+        "microkernel-mod-daemon":         "0.9.5",
+        "microkernel-mod-title":          "0.9.3",
+        "microkernel-mod-shutdown":       "0.9.3",
+        "microkernel-mod-cluster":        "0.9.5"
     },
     "engines": {
         "node":                           ">=6.0.0"
