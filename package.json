@@ -25,16 +25,16 @@
         "eslint-plugin-standard":         "3.1.0",
         "eslint-plugin-promise":          "3.8.0",
         "eslint-plugin-import":           "2.13.0",
-        "eslint-plugin-node":             "6.0.1",
-        "babel-eslint":                   "8.2.5"
+        "eslint-plugin-node":             "7.0.1",
+        "babel-eslint":                   "8.2.6"
     },
     "dependencies" : {
-        "microkernel":                    "2.0.0",
-        "microkernel-ext-co":             "0.9.15",
-        "microkernel-ext-debug":          "0.9.11",
+        "microkernel":                    "2.0.2",
+        "microkernel-ext-co":             "0.9.16",
+        "microkernel-ext-debug":          "0.9.12",
         "microkernel-mod-ctx":            "0.9.6",
         "microkernel-mod-options":        "0.9.7",
-        "microkernel-mod-logger":         "0.9.12",
+        "microkernel-mod-logger":         "0.9.13",
         "microkernel-mod-daemon":         "0.9.11",
         "microkernel-mod-title":          "0.9.8",
         "microkernel-mod-shutdown":       "0.9.7",
