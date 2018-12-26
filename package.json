@@ -20,28 +20,28 @@
     },
     "main":    "./src/gemstone.js",
     "devDependencies" : {
-        "eslint":                         "4.19.1",
-        "eslint-config-standard":         "11.0.0",
-        "eslint-plugin-standard":         "3.1.0",
-        "eslint-plugin-promise":          "3.8.0",
-        "eslint-plugin-import":           "2.13.0",
-        "eslint-plugin-node":             "7.0.1",
-        "babel-eslint":                   "8.2.6"
+        "eslint":                         "5.11.0",
+        "eslint-config-standard":         "12.0.0",
+        "eslint-plugin-standard":         "4.0.0",
+        "eslint-plugin-promise":          "4.0.1",
+        "eslint-plugin-import":           "2.14.0",
+        "eslint-plugin-node":             "8.0.0",
+        "babel-eslint":                   "10.0.1"
     },
     "dependencies" : {
-        "microkernel":                    "2.0.2",
-        "microkernel-ext-co":             "0.9.16",
-        "microkernel-ext-debug":          "0.9.12",
-        "microkernel-mod-ctx":            "0.9.6",
-        "microkernel-mod-options":        "0.9.7",
-        "microkernel-mod-logger":         "0.9.13",
-        "microkernel-mod-daemon":         "0.9.11",
-        "microkernel-mod-title":          "0.9.8",
-        "microkernel-mod-shutdown":       "0.9.7",
-        "microkernel-mod-cluster":        "0.9.10"
+        "microkernel":                    "2.0.4",
+        "microkernel-ext-co":             "0.9.18",
+        "microkernel-ext-debug":          "0.9.14",
+        "microkernel-mod-ctx":            "0.9.8",
+        "microkernel-mod-options":        "0.9.9",
+        "microkernel-mod-logger":         "0.9.15",
+        "microkernel-mod-daemon":         "0.9.13",
+        "microkernel-mod-title":          "0.9.10",
+        "microkernel-mod-shutdown":       "0.9.9",
+        "microkernel-mod-cluster":        "0.9.12"
     },
     "engines": {
-        "node":                           ">=6.0.0"
+        "node":                           ">=8.0.0"
     },
     "scripts": {
         "prepublishOnly":  "eslint --config eslint.yaml src/*.js"
