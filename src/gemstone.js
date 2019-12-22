@@ -16,8 +16,8 @@ const Latching    = require("latching")
  *  The Gemstone API
  */
 
-let latching = new Latching()
-let kernel   = null
+const latching = new Latching()
+let kernel = null
 
 export default class Gemstone {
     /*  latching integration  */
